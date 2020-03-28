@@ -3,7 +3,7 @@
 
 -------------------------------------------------------------------------------------------------------------
 
-## 5.2.5
+## 5.2.5 (2020-03-26)
 
 ### 新特性
 * 【core   】     增加逻辑，对于原始类型注入，使用默认值（issue#797@Github）
@@ -12,10 +12,17 @@
 * 【http   】     UserAgentUtil增加Chromium内核的Edge浏览器支持（issue#800@Github）
 * 【cache  】     修改FIFOCache中linkedHashMap的初始容量策略（pr#801@Github）
 * 【core   】     修改XmlUtil中setNamespaceAware默认为true
+* 【core   】     TreeNode增加extra
+* 【core   】     CollUtil.newHashSet重载歧义，更换为set方法
+* 【core   】     增加ListUtil，增加Hash32、Hash64、Hash128接口
+* 【crypto 】     BCUtil增加readPemPrivateKey和readPemPublicKey方法
+* 【cache  】     替换读写锁为StampedLock，增加LockUtil
 
 ### Bug修复
 * 【core   】     修复NumberWordFormatter拼写错误（issue#799@Github）
 * 【poi    】     修复xls文件下拉列表无效问题（issue#I1C79P@Gitee）
+* 【poi    】     修复使用Cglib代理问题（issue#I1C79P@Gitee）
+* 【core   】     修复DateUtil.weekCount跨年计算问题
 
 -------------------------------------------------------------------------------------------------------------
 ## 5.2.4
